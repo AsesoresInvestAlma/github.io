@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Asesores de Investigación Alma — Asesoramiento académico, metodológico, estadístico y científico en Bolivia. Tesis, monografías, artículos científicos y capacitación académica.">
+<meta name="keywords" content="asesoría tesis Bolivia, metodología investigación, estadística académica, monografías, artículos científicos, Cochabamba, La Paz, Oruro">
+<meta name="author" content="Ing. Alfonzo Evaristo Oraquine Fernández">
+<meta property="og:title" content="Asesores de Investigación Alma | Bolivia">
+<meta property="og:description" content="Apoyo integral en investigación científica, elaboración de tesis, proyectos de grado y análisis estadístico.">
+<meta property="og:type" content="website">
+<title>Asesores de Investigación Alma | Asesoramiento Académico y Científico</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  :root {
+    --navy: #0d2240;
+    --navy-mid: #1a3a6b;
+    --navy-light: #2a5298;
+    --accent: #c8a84b;
+    --accent-light: #e8d09a;
+    --accent-pale: #fdf6e3;
+    --white: #ffffff;
+    --off-white: #f7f8fc;
+    --gray-50: #f0f2f8;
+    --gray-100: #e2e6f0;
+    --gray-200: #c5cce0;
+    --gray-500: #6b7a99;
+    --gray-700: #3d4a6b;
+    --gray-900: #1a2035;
+    --success: #1e7a4a;
+    --success-bg: #e8f5ee;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Source Sans 3', system-ui, sans-serif;
+    --font-mono: 'DM Mono', monospace;
+    --shadow-sm: 0 2px 8px rgba(13,34,64,0.08);
+    --shadow-md: 0 6px 24px rgba(13,34,64,0.12);
+    --shadow-lg: 0 16px 48px rgba(13,34,64,0.16);
+    --radius: 10px;
+    --radius-lg: 16px;
+    --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; font-size:16px; }
+  body { font-family:var(--font-body); color:var(--gray-900); background:var(--white); line-height:1.7; overflow-x:hidden; }
+
+  /* ─── SCROLL BAR ─── */
+  ::-webkit-scrollbar { width:6px; }
+  ::-webkit-scrollbar-track { background:var(--gray-50); }
+  ::-webkit-scrollbar-thumb { background:var(--navy-light); border-radius:3px; }
+
+  /* ─── TOP BAR ─── */
+  .top-bar {
+    background:var(--navy);
+    color:rgba(255,255,255,0.75);
+    font-size:0.8rem;
+    padding:7px 0;
+    border-bottom:1px solid rgba(200,168,75,0.3);
+  }
+  .top-bar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; }
+  .top-bar a { color:var(--accent-light); text-decoration:none; margin-left:14px; transition:color var(--transition); }
+  .top-bar a:hover { color:var(--accent); }
+  .top-bar .left { display:flex; align-items:center; gap:16px; }
+  .top-bar .right { display:flex; align-items:center; }
+
+  /* ─── NAVBAR ─── */
+  nav {
+    background:var(--white);
+    border-bottom:3px solid var(--accent);
+    position:sticky; top:0; z-index:1000;
+    box-shadow:var(--shadow-md);
+    transition:all var(--transition);
+  }
+  nav .container { display:flex; align-items:center; justify-content:space-between; padding:0 20px; height:72px; }
+  .logo { display:flex; align-items:center; gap:14px; text-decoration:none; }
+  .logo-icon {
+    width:50px; height:50px;
+    background:linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    border-radius:10px;
+    display:flex; align-items:center; justify-content:center;
+    position:relative;
+    box-shadow:0 4px 12px rgba(13,34,64,0.3);
+  }
+  .logo-icon::after {
+    content:'A';
+    font-family:var(--font-display);
+    font-size:1.8rem;
+    font-weight:700;
+    color:var(--accent);
+  }
+  .logo-text { line-height:1.2; }
+  .logo-text strong { display:block; font-family:var(--font-display); font-size:1.1rem; color:var(--navy); font-weight:700; }
+  .logo-text span { font-size:0.72rem; color:var(--gray-500); font-weight:500; letter-spacing:0.04em; text-transform:uppercase; }
+  .nav-links { display:flex; align-items:center; gap:2px; list-style:none; }
+  .nav-links a {
+    display:block; padding:6px 12px;
+    font-size:0.85rem; font-weight:500;
+    color:var(--gray-700);
+    text-decoration:none;
+    border-radius:6px;
+    transition:all var(--transition);
+    position:relative;
+    white-space:nowrap;
+  }
+  .nav-links a:hover, .nav-links a.active { color:var(--navy); background:var(--gray-50); }
+  .nav-links a.active::after {
+    content:''; position:absolute; bottom:-2px; left:50%; transform:translateX(-50%);
+    width:20px; height:2px; background:var(--accent); border-radius:1px;
+  }
+  .nav-cta {
+    background:var(--navy) !important;
+    color:var(--white) !important;
+    padding:8px 18px !important;
+    border-radius:8px !important;
+    margin-left:8px;
+    font-weight:600 !important;
+  }
+  .nav-cta:hover { background:var(--navy-light) !important; transform:translateY(-1px); box-shadow:var(--shadow-sm); }
+  .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:8px; border:none; background:none; }
+  .hamburger span { display:block; width:22px; height:2px; background:var(--navy); border-radius:2px; transition:all var(--transition); }
+  .mobile-menu {
+    display:none;
+    position:fixed; top:75px; left:0; right:0;
+    background:var(--white);
+    border-bottom:3px solid var(--accent);
+    box-shadow:var(--shadow-lg);
+    z-index:999;
+    padding:16px 20px;
+  }
+  .mobile-menu.open { display:block; }
+  .mobile-menu a { display:block; padding:10px 0; border-bottom:1px solid var(--gray-100); color:var(--gray-700); text-decoration:none; font-weight:500; font-size:0.95rem; }
+  .mobile-menu a:last-child { border-bottom:none; }
+
+  /* ─── CONTAINER ─── */
+  .container { max-width:1200px; margin:0 auto; padding:0 24px; }
+
+  /* ─── HERO ─── */
+  .hero {
+    background:var(--navy);
+    position:relative;
+    overflow:hidden;
+    padding:100px 0 80px;
+    min-height:92vh;
+    display:flex; align-items:center;
+  }
+  .hero-bg {
+    position:absolute; inset:0;
+    background:
+      radial-gradient(ellipse 70% 60% at 80% 40%, rgba(42,82,152,0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 50% at 10% 80%, rgba(200,168,75,0.12) 0%, transparent 60%);
+  }
+  .hero-grid {
+    position:absolute; inset:0;
+    background-image:linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size:50px 50px;
+  }
+  .hero-decor {
+    position:absolute; right:-80px; top:50%; transform:translateY(-50%);
+    width:600px; height:600px;
+    border:1px solid rgba(200,168,75,0.15);
+    border-radius:50%;
+    pointer-events:none;
+  }
+  .hero-decor::before {
+    content:''; position:absolute; inset:40px;
+    border:1px solid rgba(200,168,75,0.1);
+    border-radius:50%;
+  }
+  .hero .container { position:relative; z-index:2; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+  .hero-badge {
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(200,168,75,0.15);
+    border:1px solid rgba(200,168,75,0.35);
+    color:var(--accent-light);
+    padding:6px 16px; border-radius:100px;
+    font-size:0.78rem; font-weight:600; letter-spacing:0.06em;
+    text-transform:uppercase; margin-bottom:24px;
+  }
+  .hero-badge i { font-size:0.7rem; }
+  .hero h1 {
+    font-family:var(--font-display);
+    font-size:clamp(2rem,4vw,3.2rem);
+    color:var(--white);
+    line-height:1.15;
+    font-weight:700;
+    margin-bottom:20px;
+  }
+  .hero h1 em { color:var(--accent); font-style:normal; }
+  .hero-sub { color:rgba(255,255,255,0.7); font-size:1.05rem; line-height:1.75; margin-bottom:36px; max-width:520px; }
+  .hero-actions { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:48px; }
+  .btn-primary {
+    background:var(--accent); color:var(--navy);
+    padding:13px 28px; border-radius:8px;
+    font-weight:700; font-size:0.95rem;
+    text-decoration:none; display:inline-flex; align-items:center; gap:8px;
+    transition:all var(--transition);
+    border:2px solid var(--accent);
+  }
+  .btn-primary:hover { background:transparent; color:var(--accent); transform:translateY(-2px); box-shadow:0 8px 24px rgba(200,168,75,0.3); }
+  .btn-outline {
+    background:transparent; color:var(--white);
+    padding:13px 28px; border-radius:8px;
+    font-weight:600; font-size:0.95rem;
+    text-decoration:none; display:inline-flex; align-items:center; gap:8px;
+    border:2px solid rgba(255,255,255,0.3);
+    transition:all var(--transition);
+  }
+  .btn-outline:hover { border-color:var(--white); background:rgba(255,255,255,0.08); transform:translateY(-2px); }
+  .hero-stats { display:flex; gap:32px; flex-wrap:wrap; }
+  .hero-stat { text-align:center; }
+  .hero-stat strong { display:block; font-size:2rem; font-weight:700; color:var(--accent); font-family:var(--font-display); line-height:1; }
+  .hero-stat span { font-size:0.8rem; color:rgba(255,255,255,0.6); margin-top:4px; display:block; }
+  .hero-card {
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:var(--radius-lg);
+    padding:32px;
+    backdrop-filter:blur(10px);
+  }
+  .hero-card h3 { color:var(--accent); font-family:var(--font-display); margin-bottom:20px; font-size:1.1rem; }
+  .service-pill {
+    display:flex; align-items:center; gap:10px;
+    padding:12px 16px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:8px;
+    margin-bottom:10px;
+    transition:all var(--transition);
+    cursor:default;
+  }
+  .service-pill:hover { background:rgba(200,168,75,0.12); border-color:rgba(200,168,75,0.3); }
+  .service-pill i { color:var(--accent); width:18px; text-align:center; }
+  .service-pill span { color:rgba(255,255,255,0.85); font-size:0.88rem; font-weight:500; }
+
+  /* ─── SECTIONS ─── */
+  section { padding:88px 0; }
+  .section-header { text-align:center; margin-bottom:56px; }
+  .section-label {
+    display:inline-block;
+    background:var(--accent-pale);
+    color:var(--accent);
+    border:1px solid var(--accent-light);
+    padding:4px 16px; border-radius:100px;
+    font-size:0.75rem; font-weight:700;
+    letter-spacing:0.08em; text-transform:uppercase;
+    margin-bottom:14px;
+  }
+  .section-header h2 { font-family:var(--font-display); font-size:clamp(1.8rem,3vw,2.6rem); color:var(--navy); line-height:1.2; margin-bottom:14px; }
+  .section-header p { color:var(--gray-500); max-width:580px; margin:0 auto; font-size:1rem; }
+  .divider { width:60px; height:3px; background:var(--accent); border-radius:2px; margin:16px auto 0; }
+
+  /* ─── ABOUT ─── */
+  #quienes-somos { background:var(--off-white); }
+  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+  .about-img {
+    position:relative;
+    background:linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    border-radius:var(--radius-lg);
+    padding:48px 32px;
+    text-align:center;
+    color:var(--white);
+    overflow:hidden;
+  }
+  .about-img::before {
+    content:'';
+    position:absolute; inset:0;
+    background:radial-gradient(ellipse at 70% 30%, rgba(200,168,75,0.25), transparent 60%);
+  }
+  .about-img-content { position:relative; z-index:1; }
+  .about-initial {
+    width:100px; height:100px;
+    background:rgba(200,168,75,0.2);
+    border:2px solid var(--accent);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    margin:0 auto 20px;
+    font-family:var(--font-display);
+    font-size:2.5rem; font-weight:700; color:var(--accent);
+  }
+  .about-img h3 { font-family:var(--font-display); font-size:1.3rem; margin-bottom:6px; }
+  .about-img p { font-size:0.85rem; color:rgba(255,255,255,0.7); margin-bottom:24px; }
+  .credential-badge {
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(200,168,75,0.15);
+    border:1px solid rgba(200,168,75,0.35);
+    color:var(--accent-light);
+    padding:8px 16px; border-radius:8px;
+    font-size:0.82rem; font-weight:600;
+  }
+  .about-text h2 { font-family:var(--font-display); font-size:2rem; color:var(--navy); margin-bottom:16px; }
+  .about-text p { color:var(--gray-500); margin-bottom:14px; font-size:0.97rem; }
+  .feature-list { list-style:none; margin-top:24px; }
+  .feature-list li {
+    display:flex; align-items:flex-start; gap:12px;
+    padding:10px 0; border-bottom:1px solid var(--gray-100);
+    font-size:0.92rem; color:var(--gray-700);
+  }
+  .feature-list li:last-child { border-bottom:none; }
+  .feature-list i { color:var(--accent); margin-top:3px; flex-shrink:0; }
+
+  /* ─── MISSION ─── */
+  #mision { background:var(--white); }
+  .mission-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  .mission-card {
+    background:var(--white);
+    border:1px solid var(--gray-100);
+    border-radius:var(--radius-lg);
+    padding:36px 28px;
+    text-align:center;
+    transition:all var(--transition);
+    position:relative; overflow:hidden;
+  }
+  .mission-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:var(--accent-light); }
+  .mission-card.featured { border-color:var(--navy); background:var(--navy); color:var(--white); }
+  .mission-card.featured .mission-icon { background:rgba(200,168,75,0.2); color:var(--accent); }
+  .mission-card.featured h3 { color:var(--accent); }
+  .mission-card.featured p { color:rgba(255,255,255,0.75); }
+  .mission-icon {
+    width:64px; height:64px;
+    background:var(--accent-pale);
+    border-radius:12px;
+    display:flex; align-items:center; justify-content:center;
+    margin:0 auto 20px;
+    font-size:1.6rem; color:var(--navy);
+  }
+  .mission-card h3 { font-family:var(--font-display); font-size:1.3rem; color:var(--navy); margin-bottom:12px; }
+  .mission-card p { font-size:0.9rem; color:var(--gray-500); line-height:1.7; }
+  .values-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:48px; }
+  .value-item {
+    background:var(--gray-50);
+    border-radius:var(--radius);
+    padding:20px 16px;
+    text-align:center;
+    transition:all var(--transition);
+  }
+  .value-item:hover { background:var(--accent-pale); transform:translateY(-2px); }
+  .value-item i { font-size:1.5rem; color:var(--navy); margin-bottom:10px; display:block; }
+  .value-item strong { display:block; font-size:0.88rem; color:var(--navy); font-weight:700; }
+  .value-item span { font-size:0.78rem; color:var(--gray-500); }
+
+  /* ─── SERVICES ─── */
+  #servicios { background:var(--off-white); }
+  .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .service-card {
+    background:var(--white);
+    border:1px solid var(--gray-100);
+    border-radius:var(--radius-lg);
+    padding:32px 24px;
+    transition:all var(--transition);
+    position:relative;
+  }
+  .service-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-md); }
+  .service-card::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:3px;
+    background:var(--gray-100); border-radius:var(--radius-lg) var(--radius-lg) 0 0;
+    transition:all var(--transition);
+  }
+  .service-card:hover::before { background:var(--accent); }
+  .service-number {
+    font-family:var(--font-mono); font-size:0.7rem;
+    color:var(--gray-200); font-weight:500; margin-bottom:16px;
+    letter-spacing:0.1em;
+  }
+  .service-icon {
+    width:52px; height:52px;
+    background:var(--off-white);
+    border-radius:10px;
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.4rem; color:var(--navy);
+    margin-bottom:16px;
+    transition:all var(--transition);
+  }
+  .service-card:hover .service-icon { background:var(--navy); color:var(--accent); }
+  .service-card h3 { font-family:var(--font-display); font-size:1.15rem; color:var(--navy); margin-bottom:10px; }
+  .service-card p { font-size:0.88rem; color:var(--gray-500); line-height:1.7; margin-bottom:16px; }
+  .service-tags { display:flex; flex-wrap:wrap; gap:6px; }
+  .tag {
+    background:var(--gray-50); color:var(--gray-700);
+    padding:3px 10px; border-radius:100px;
+    font-size:0.72rem; font-weight:600;
+    border:1px solid var(--gray-100);
+  }
+
+  /* ─── LIBRARY ─── */
+  #biblioteca { background:var(--white); }
+  .library-search {
+    display:flex; gap:12px; margin-bottom:36px;
+    max-width:700px; margin-left:auto; margin-right:auto;
+  }
+  .search-input {
+    flex:1; padding:12px 20px;
+    border:2px solid var(--gray-100);
+    border-radius:10px;
+    font-family:var(--font-body);
+    font-size:0.95rem; color:var(--gray-900);
+    transition:all var(--transition);
+    outline:none;
+  }
+  .search-input:focus { border-color:var(--navy); box-shadow:0 0 0 3px rgba(42,82,152,0.1); }
+  .search-btn {
+    background:var(--navy); color:var(--white);
+    border:none; padding:12px 24px;
+    border-radius:10px; cursor:pointer;
+    font-family:var(--font-body); font-weight:600;
+    font-size:0.9rem; display:flex; align-items:center; gap:8px;
+    transition:all var(--transition);
+  }
+  .search-btn:hover { background:var(--navy-light); }
+  .library-cats { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:40px; }
+  .cat-pill {
+    padding:8px 20px; border-radius:100px;
+    border:1px solid var(--gray-200);
+    background:var(--white); color:var(--gray-700);
+    cursor:pointer; font-size:0.85rem; font-weight:500;
+    transition:all var(--transition);
+  }
+  .cat-pill.active, .cat-pill:hover { background:var(--navy); color:var(--white); border-color:var(--navy); }
+  .docs-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+  .doc-card {
+    background:var(--white);
+    border:1px solid var(--gray-100);
+    border-radius:var(--radius);
+    padding:20px 16px;
+    text-align:center;
+    transition:all var(--transition);
+    cursor:pointer;
+  }
+  .doc-card:hover { box-shadow:var(--shadow-md); border-color:var(--accent-light); transform:translateY(-2px); }
+  .doc-icon { font-size:2.2rem; margin-bottom:10px; }
+  .doc-type {
+    display:inline-block;
+    padding:2px 10px; border-radius:100px;
+    font-size:0.68rem; font-weight:700;
+    letter-spacing:0.05em; text-transform:uppercase;
+    margin-bottom:8px;
+  }
+  .doc-type.pdf { background:#fee2e2; color:#991b1b; }
+  .doc-type.word { background:#dbeafe; color:#1e40af; }
+  .doc-type.excel { background:#dcfce7; color:#14532d; }
+  .doc-type.ppt { background:#fef3c7; color:#92400e; }
+  .doc-card h4 { font-size:0.85rem; color:var(--gray-900); font-weight:600; margin-bottom:4px; line-height:1.4; }
+  .doc-card span { font-size:0.75rem; color:var(--gray-500); }
+  .doc-download {
+    display:block; margin-top:12px;
+    background:var(--gray-50); border:1px solid var(--gray-200);
+    color:var(--gray-700); padding:7px;
+    border-radius:6px; font-size:0.75rem; font-weight:600;
+    cursor:pointer; transition:all var(--transition);
+  }
+  .doc-download:hover { background:var(--navy); color:var(--white); border-color:var(--navy); }
+
+  /* ─── COURSES ─── */
+  #cursos { background:var(--navy); }
+  #cursos .section-label { background:rgba(200,168,75,0.15); color:var(--accent); border-color:rgba(200,168,75,0.3); }
+  #cursos .section-header h2 { color:var(--white); }
+  #cursos .section-header p { color:rgba(255,255,255,0.65); }
+  #cursos .divider { background:var(--accent); }
+  .courses-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .course-card {
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    transition:all var(--transition);
+  }
+  .course-card:hover { transform:translateY(-4px); box-shadow:0 16px 48px rgba(0,0,0,0.3); border-color:rgba(200,168,75,0.4); }
+  .course-img {
+    height:140px;
+    background:linear-gradient(135deg, var(--navy-light) 0%, var(--navy-mid) 100%);
+    display:flex; align-items:center; justify-content:center;
+    font-size:3rem; position:relative;
+  }
+  .course-img-label {
+    position:absolute; top:12px; right:12px;
+    background:var(--accent); color:var(--navy);
+    padding:4px 12px; border-radius:100px;
+    font-size:0.7rem; font-weight:700; text-transform:uppercase;
+  }
+  .course-body { padding:24px; }
+  .course-body h3 { font-family:var(--font-display); color:var(--white); font-size:1.1rem; margin-bottom:8px; }
+  .course-body p { color:rgba(255,255,255,0.6); font-size:0.85rem; margin-bottom:16px; line-height:1.65; }
+  .course-meta { display:flex; gap:16px; flex-wrap:wrap; margin-bottom:20px; }
+  .course-meta-item { display:flex; align-items:center; gap:6px; color:rgba(255,255,255,0.5); font-size:0.78rem; }
+  .course-meta-item i { color:var(--accent); }
+  .btn-course {
+    display:block; width:100%; text-align:center;
+    background:rgba(200,168,75,0.15);
+    border:1px solid rgba(200,168,75,0.35);
+    color:var(--accent); padding:10px;
+    border-radius:8px; font-weight:600; font-size:0.85rem;
+    cursor:pointer; transition:all var(--transition); text-decoration:none;
+  }
+  .btn-course:hover { background:var(--accent); color:var(--navy); }
+
+  /* ─── BLOG ─── */
+  #blog { background:var(--off-white); }
+  .blog-grid { display:grid; grid-template-columns:2fr 1fr; gap:28px; }
+  .blog-main .blog-card {
+    background:var(--white);
+    border:1px solid var(--gray-100);
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    transition:all var(--transition);
+  }
+  .blog-main .blog-card:hover { box-shadow:var(--shadow-md); transform:translateY(-2px); }
+  .blog-img {
+    height:220px;
+    background:linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    display:flex; align-items:center; justify-content:center;
+    font-size:4rem;
+    position:relative;
+  }
+  .blog-cat {
+    position:absolute; bottom:16px; left:16px;
+    background:var(--accent); color:var(--navy);
+    padding:4px 14px; border-radius:100px;
+    font-size:0.72rem; font-weight:700; text-transform:uppercase;
+  }
+  .blog-body { padding:28px; }
+  .blog-body .meta { display:flex; align-items:center; gap:12px; margin-bottom:12px; }
+  .blog-body .meta span { font-size:0.78rem; color:var(--gray-500); }
+  .blog-body h3 { font-family:var(--font-display); font-size:1.3rem; color:var(--navy); margin-bottom:10px; }
+  .blog-body p { font-size:0.9rem; color:var(--gray-500); line-height:1.7; margin-bottom:16px; }
+  .read-more { color:var(--navy-light); font-weight:600; font-size:0.85rem; text-decoration:none; display:inline-flex; align-items:center; gap:6px; }
+  .read-more:hover { color:var(--accent); }
+  .blog-sidebar { display:flex; flex-direction:column; gap:20px; }
+  .sidebar-card {
+    background:var(--white); border:1px solid var(--gray-100);
+    border-radius:var(--radius); padding:20px;
+  }
+  .sidebar-card h4 { font-family:var(--font-display); color:var(--navy); margin-bottom:14px; font-size:1rem; padding-bottom:10px; border-bottom:1px solid var(--gray-100); }
+  .mini-post { display:flex; gap:12px; padding:10px 0; border-bottom:1px solid var(--gray-50); align-items:flex-start; }
+  .mini-post:last-child { border-bottom:none; }
+  .mini-post-icon { width:36px; height:36px; background:var(--off-white); border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0; }
+  .mini-post-text h5 { font-size:0.82rem; color:var(--navy); font-weight:600; line-height:1.4; margin-bottom:2px; }
+  .mini-post-text span { font-size:0.72rem; color:var(--gray-500); }
+
+  /* ─── TESTIMONIALS ─── */
+  #testimonios { background:var(--white); }
+  .testimonials-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .testimonial-card {
+    background:var(--white); border:1px solid var(--gray-100);
+    border-radius:var(--radius-lg); padding:28px;
+    transition:all var(--transition);
+    position:relative;
+  }
+  .testimonial-card:hover { box-shadow:var(--shadow-md); transform:translateY(-3px); }
+  .quote-icon { font-size:2rem; color:var(--accent-light); margin-bottom:14px; }
+  .testimonial-text { font-size:0.92rem; color:var(--gray-500); line-height:1.75; margin-bottom:20px; font-style:italic; }
+  .testimonial-author { display:flex; align-items:center; gap:12px; }
+  .author-avatar {
+    width:44px; height:44px; border-radius:50%;
+    background:linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    display:flex; align-items:center; justify-content:center;
+    font-weight:700; color:var(--accent); font-size:0.9rem;
+    flex-shrink:0;
+  }
+  .author-info strong { display:block; font-size:0.88rem; color:var(--navy); font-weight:700; }
+  .author-info span { font-size:0.78rem; color:var(--gray-500); }
+  .stars { color:var(--accent); font-size:0.8rem; margin-bottom:4px; }
+
+  /* ─── CONTACT FORM ─── */
+  #solicitud { background:var(--off-white); }
+  .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+  .form-info h3 { font-family:var(--font-display); font-size:1.6rem; color:var(--navy); margin-bottom:14px; }
+  .form-info p { color:var(--gray-500); font-size:0.95rem; margin-bottom:28px; }
+  .contact-options { display:flex; flex-direction:column; gap:14px; }
+  .contact-opt {
+    display:flex; align-items:center; gap:14px;
+    padding:14px 18px;
+    background:var(--white); border:1px solid var(--gray-100);
+    border-radius:var(--radius); text-decoration:none;
+    transition:all var(--transition);
+  }
+  .contact-opt:hover { border-color:var(--accent-light); transform:translateX(4px); }
+  .contact-opt-icon {
+    width:42px; height:42px;
+    border-radius:8px; display:flex; align-items:center; justify-content:center;
+    font-size:1.1rem; flex-shrink:0;
+  }
+  .contact-opt-icon.wa { background:#dcfce7; color:#16a34a; }
+  .contact-opt-icon.fb { background:#dbeafe; color:#1d4ed8; }
+  .contact-opt-icon.mail { background:var(--accent-pale); color:var(--accent); }
+  .contact-opt-text strong { display:block; font-size:0.88rem; color:var(--navy); font-weight:700; }
+  .contact-opt-text span { font-size:0.8rem; color:var(--gray-500); }
+  .form-panel {
+    background:var(--white); border:1px solid var(--gray-100);
+    border-radius:var(--radius-lg); padding:36px;
+    box-shadow:var(--shadow-sm);
+  }
+  .form-panel h3 { font-family:var(--font-display); font-size:1.3rem; color:var(--navy); margin-bottom:24px; padding-bottom:16px; border-bottom:1px solid var(--gray-100); }
+  .form-group { margin-bottom:18px; }
+  .form-group label { display:block; font-size:0.83rem; font-weight:700; color:var(--gray-700); margin-bottom:6px; letter-spacing:0.02em; }
+  .form-group label span { color:#dc2626; }
+  .form-control {
+    width:100%; padding:11px 16px;
+    border:1.5px solid var(--gray-100); border-radius:8px;
+    font-family:var(--font-body); font-size:0.92rem; color:var(--gray-900);
+    background:var(--white); outline:none;
+    transition:all var(--transition);
+  }
+  .form-control:focus { border-color:var(--navy); box-shadow:0 0 0 3px rgba(42,82,152,0.08); }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  textarea.form-control { min-height:110px; resize:vertical; }
+  select.form-control { cursor:pointer; }
+  .btn-submit {
+    width:100%; padding:14px;
+    background:var(--navy); color:var(--white);
+    border:none; border-radius:8px;
+    font-family:var(--font-body); font-size:0.95rem; font-weight:700;
+    cursor:pointer; transition:all var(--transition);
+    display:flex; align-items:center; justify-content:center; gap:8px;
+  }
+  .btn-submit:hover { background:var(--navy-light); transform:translateY(-1px); box-shadow:var(--shadow-md); }
+  .form-note { font-size:0.75rem; color:var(--gray-500); text-align:center; margin-top:12px; }
+
+  /* ─── CTA BANNER ─── */
+  .cta-banner {
+    background:linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 60%, var(--accent) 200%);
+    padding:72px 0;
+    text-align:center;
+    position:relative; overflow:hidden;
+  }
+  .cta-banner::before {
+    content:''; position:absolute; inset:0;
+    background:radial-gradient(ellipse at 70% 50%, rgba(200,168,75,0.2), transparent 60%);
+  }
+  .cta-banner h2 { font-family:var(--font-display); font-size:2.2rem; color:var(--white); margin-bottom:14px; position:relative; }
+  .cta-banner p { color:rgba(255,255,255,0.7); font-size:1rem; margin-bottom:32px; position:relative; }
+  .cta-actions { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; position:relative; }
+
+  /* ─── FOOTER ─── */
+  footer { background:var(--gray-900); color:rgba(255,255,255,0.7); padding:60px 0 0; }
+  .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; margin-bottom:48px; }
+  .footer-brand .logo-text strong { color:var(--white); }
+  .footer-brand .logo-text span { color:rgba(255,255,255,0.5); }
+  .footer-brand p { font-size:0.85rem; line-height:1.7; margin-top:16px; }
+  .footer-socials { display:flex; gap:10px; margin-top:20px; }
+  .social-icon {
+    width:36px; height:36px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:8px; display:flex; align-items:center; justify-content:center;
+    color:rgba(255,255,255,0.6); text-decoration:none;
+    transition:all var(--transition);
+  }
+  .social-icon:hover { background:var(--accent); color:var(--navy); border-color:var(--accent); }
+  .footer-col h4 { color:var(--white); font-size:0.9rem; font-weight:700; margin-bottom:16px; letter-spacing:0.04em; }
+  .footer-col ul { list-style:none; }
+  .footer-col ul li { margin-bottom:8px; }
+  .footer-col ul li a { color:rgba(255,255,255,0.55); font-size:0.85rem; text-decoration:none; transition:color var(--transition); }
+  .footer-col ul li a:hover { color:var(--accent); }
+  .footer-contact-item { display:flex; align-items:flex-start; gap:10px; margin-bottom:12px; font-size:0.83rem; }
+  .footer-contact-item i { color:var(--accent); margin-top:2px; flex-shrink:0; }
+  .footer-bottom {
+    border-top:1px solid rgba(255,255,255,0.08);
+    padding:20px 0;
+    display:flex; justify-content:space-between; align-items:center;
+    flex-wrap:wrap; gap:10px;
+    font-size:0.78rem; color:rgba(255,255,255,0.4);
+  }
+  .footer-bottom a { color:var(--accent); text-decoration:none; }
+
+  /* ─── FLOATING CHAT ─── */
+  .chat-float {
+    position:fixed; bottom:28px; right:28px; z-index:2000;
+    display:flex; flex-direction:column; align-items:flex-end; gap:10px;
+  }
+  .chat-bubble {
+    background:var(--white);
+    border:1px solid var(--gray-100);
+    border-radius:var(--radius-lg);
+    padding:16px 20px;
+    box-shadow:var(--shadow-lg);
+    max-width:260px; font-size:0.85rem;
+    display:none;
+    animation:slideUp 0.3s ease;
+  }
+  @keyframes slideUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+  .chat-bubble.open { display:block; }
+  .chat-bubble p { color:var(--gray-700); margin-bottom:10px; }
+  .chat-bubble strong { color:var(--navy); font-weight:700; display:block; margin-bottom:4px; }
+  .chat-btns { display:flex; flex-direction:column; gap:8px; }
+  .chat-btn {
+    display:flex; align-items:center; gap:8px;
+    padding:9px 14px; border-radius:8px; text-decoration:none;
+    font-size:0.82rem; font-weight:600; transition:all var(--transition);
+  }
+  .chat-btn.wa { background:#22c55e; color:var(--white); }
+  .chat-btn.wa:hover { background:#16a34a; }
+  .chat-btn.fb { background:#1877f2; color:var(--white); }
+  .chat-btn.fb:hover { background:#1558b0; }
+  .chat-toggle {
+    width:56px; height:56px;
+    background:var(--navy);
+    border-radius:50%; display:flex; align-items:center; justify-content:center;
+    color:var(--white); font-size:1.3rem; cursor:pointer;
+    box-shadow:0 8px 24px rgba(13,34,64,0.35);
+    border:none; transition:all var(--transition);
+    position:relative;
+  }
+  .chat-toggle:hover { background:var(--navy-light); transform:scale(1.05); }
+  .chat-toggle .notif {
+    position:absolute; top:-4px; right:-4px;
+    width:18px; height:18px; background:#ef4444;
+    border-radius:50%; border:2px solid var(--white);
+    font-size:0.6rem; color:var(--white);
+    display:flex; align-items:center; justify-content:center; font-weight:700;
+  }
+
+  /* ─── MODAL ─── */
+  .modal-overlay {
+    position:fixed; inset:0; background:rgba(0,0,0,0.5);
+    z-index:3000; display:none; align-items:center; justify-content:center;
+    padding:20px;
+  }
+  .modal-overlay.open { display:flex; }
+  .modal {
+    background:var(--white); border-radius:var(--radius-lg);
+    padding:36px; max-width:480px; width:100%;
+    position:relative; animation:slideUp 0.3s ease;
+  }
+  .modal h3 { font-family:var(--font-display); color:var(--navy); font-size:1.4rem; margin-bottom:8px; }
+  .modal p { color:var(--gray-500); font-size:0.9rem; margin-bottom:24px; }
+  .modal-close { position:absolute; top:16px; right:16px; background:none; border:none; font-size:1.2rem; color:var(--gray-500); cursor:pointer; }
+  .modal-close:hover { color:var(--navy); }
+  .login-toggle { text-align:center; margin-top:16px; font-size:0.85rem; color:var(--gray-500); }
+  .login-toggle a { color:var(--navy-light); font-weight:600; cursor:pointer; text-decoration:none; }
+
+  /* ─── SCROLL TO TOP ─── */
+  .scroll-top {
+    position:fixed; bottom:28px; left:28px; z-index:2000;
+    width:44px; height:44px; background:var(--accent);
+    border-radius:50%; display:flex; align-items:center; justify-content:center;
+    color:var(--navy); text-decoration:none; font-size:1rem;
+    box-shadow:var(--shadow-md); opacity:0; pointer-events:none;
+    transition:all var(--transition);
+  }
+  .scroll-top.visible { opacity:1; pointer-events:auto; }
+  .scroll-top:hover { transform:translateY(-3px); box-shadow:var(--shadow-lg); }
+
+  /* ─── TOAST ─── */
+  .toast {
+    position:fixed; bottom:100px; right:28px; z-index:4000;
+    background:var(--success-bg); border:1px solid #a7f3d0;
+    color:var(--success); padding:14px 20px;
+    border-radius:10px; display:none; align-items:center; gap:10px;
+    font-size:0.88rem; font-weight:600; box-shadow:var(--shadow-md);
+    animation:slideUp 0.3s ease;
+  }
+  .toast.show { display:flex; }
+
+  /* ─── PROGRESS ─── */
+  .reading-bar {
+    position:fixed; top:0; left:0; height:3px;
+    background:var(--accent); z-index:2000;
+    transition:width 0.1s;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media(max-width:1024px) {
+    .hero .container { grid-template-columns:1fr; text-align:center; }
+    .hero-card { display:none; }
+    .hero-stats { justify-content:center; }
+    .about-grid { grid-template-columns:1fr; }
+    .mission-grid { grid-template-columns:1fr 1fr; }
+    .services-grid { grid-template-columns:1fr 1fr; }
+    .docs-grid { grid-template-columns:1fr 1fr; }
+    .courses-grid { grid-template-columns:1fr 1fr; }
+    .footer-grid { grid-template-columns:1fr 1fr; }
+  }
+  @media(max-width:768px) {
+    .nav-links { display:none; }
+    .hamburger { display:flex; }
+    section { padding:64px 0; }
+    .mission-grid { grid-template-columns:1fr; }
+    .services-grid { grid-template-columns:1fr; }
+    .values-grid { grid-template-columns:1fr 1fr; }
+    .blog-grid { grid-template-columns:1fr; }
+    .testimonials-grid { grid-template-columns:1fr; }
+    .form-grid { grid-template-columns:1fr; }
+    .form-row { grid-template-columns:1fr; }
+    .courses-grid { grid-template-columns:1fr; }
+    .footer-grid { grid-template-columns:1fr; }
+    .footer-bottom { flex-direction:column; text-align:center; }
+    .hero-actions { justify-content:center; }
+    .hero h1 { font-size:2rem; }
+  }
+  @media(max-width:480px) {
+    .docs-grid { grid-template-columns:1fr 1fr; }
+    .values-grid { grid-template-columns:1fr; }
+    .chat-float { bottom:16px; right:16px; }
+  }
+
+  /* ─── UTILITY ─── */
+  .text-center { text-align:center; }
+  .mt-4 { margin-top:1rem; }
+  .mt-8 { margin-top:2rem; }
+  .hidden { display:none; }
+  .bg-white { background:var(--white); }
+  .repo-section { background:var(--gray-50); padding:48px; border-radius:var(--radius-lg); border:1px solid var(--gray-100); }
+  .repo-items { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:24px; }
+  @media(max-width:768px) { .repo-items { grid-template-columns:1fr; } }
+  .repo-item {
+    display:flex; align-items:center; gap:12px;
+    padding:14px 16px; background:var(--white);
+    border:1px solid var(--gray-100); border-radius:var(--radius);
+    text-decoration:none; transition:all var(--transition);
+  }
+  .repo-item:hover { border-color:var(--navy); transform:translateX(4px); }
+  .repo-item i { font-size:1.4rem; color:var(--navy-light); }
+  .repo-item-text strong { display:block; font-size:0.85rem; color:var(--navy); font-weight:700; }
+  .repo-item-text span { font-size:0.75rem; color:var(--gray-500); }
+
+  /* Agenda Section */
+  .agenda-section { background:var(--white); border:1px solid var(--gray-100); border-radius:var(--radius-lg); overflow:hidden; }
+  .agenda-header { background:var(--navy); padding:20px 28px; display:flex; justify-content:space-between; align-items:center; }
+  .agenda-header h4 { color:var(--white); font-family:var(--font-display); }
+  .agenda-header span { color:var(--accent); font-size:0.85rem; }
+  .agenda-body { padding:20px 28px; }
+  .slot { display:flex; align-items:center; gap:14px; padding:12px 0; border-bottom:1px solid var(--gray-50); }
+  .slot:last-child { border-bottom:none; }
+  .slot-time { font-family:var(--font-mono); font-size:0.82rem; color:var(--gray-500); min-width:80px; }
+  .slot-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
+  .slot-dot.free { background:#22c55e; }
+  .slot-dot.busy { background:#ef4444; }
+  .slot-dot.tentative { background:var(--accent); }
+  .slot-info strong { display:block; font-size:0.85rem; color:var(--navy); }
+  .slot-info span { font-size:0.75rem; color:var(--gray-500); }
+  .btn-book {
+    background:var(--navy); color:var(--white);
+    border:none; padding:6px 14px; border-radius:6px;
+    font-size:0.75rem; font-weight:700; cursor:pointer;
+    margin-left:auto; transition:all var(--transition);
+  }
+  .btn-book:hover { background:var(--accent); color:var(--navy); }
+</style>
+</head>
+<body>
+
+<!-- READING PROGRESS -->
+<div class="reading-bar" id="readingBar"></div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <i class="fas fa-check-circle"></i>
+  <span id="toastMsg">¡Acción completada exitosamente!</span>
+</div>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <div class="left">
+      <span><i class="fas fa-map-marker-alt" style="margin-right:5px;color:var(--accent)"></i>Bolivia — Cochabamba · La Paz · Oruro</span>
+      <span><i class="fas fa-clock" style="margin-right:5px;color:var(--accent)"></i>Lun–Sáb, 8:00–20:00</span>
+    </div>
+    <div class="right">
+      <a href="https://wa.me/59170000000" target="_blank"><i class="fab fa-whatsapp" style="margin-right:5px"></i>WhatsApp</a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook" style="margin-right:5px"></i>Facebook</a>
+      <a href="mailto:info@asesoresalma.bo"><i class="fas fa-envelope" style="margin-right:5px"></i>Correo</a>
+      <a href="#" onclick="openModal('loginModal')"><i class="fas fa-user" style="margin-right:5px"></i>Iniciar sesión</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="mainNav">
+  <div class="container">
+    <a href="#inicio" class="logo">
+      <div class="logo-icon"></div>
+      <div class="logo-text">
+        <strong>Asesores de Investigación Alma</strong>
+        <span>Asesoramiento Académico y Científico · Bolivia</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio" class="active">Inicio</a></li>
+      <li><a href="#quienes-somos">Quiénes Somos</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#biblioteca">Biblioteca</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#solicitud">Solicitar</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#inicio" onclick="closeMobile()">Inicio</a>
+  <a href="#quienes-somos" onclick="closeMobile()">Quiénes Somos</a>
+  <a href="#mision" onclick="closeMobile()">Misión y Visión</a>
+  <a href="#servicios" onclick="closeMobile()">Servicios Académicos</a>
+  <a href="#biblioteca" onclick="closeMobile()">Biblioteca Digital</a>
+  <a href="#cursos" onclick="closeMobile()">Cursos y Capacitaciones</a>
+  <a href="#blog" onclick="closeMobile()">Blog de Investigación</a>
+  <a href="#solicitud" onclick="closeMobile()">Solicitar Servicio</a>
+  <a href="#contacto" onclick="closeMobile()">Contacto</a>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECCIÓN 1: HERO / INICIO                   -->
+<!-- ═══════════════════════════════════════════ -->
+<section id="inicio" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-decor"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i>
+        Líderes en Asesoramiento Académico en Bolivia
+      </div>
+      <h1>
+        Investigación científica<br>
+        con <em>rigor, método</em><br>
+        y excelencia académica
+      </h1>
+      <p class="hero-sub">
+        Brindamos apoyo integral a estudiantes, investigadores, profesionales y docentes en la elaboración de tesis, proyectos de grado, monografías, artículos científicos y análisis estadístico avanzado. Somos su aliado estratégico en el ámbito académico boliviano.
+      </p>
+      <div class="hero-actions">
+        <a href="#solicitud" class="btn-primary">
+          <i class="fas fa-paper-plane"></i> Solicitar Asesoría
+        </a>
+        <a href="#servicios" class="btn-outline">
+          <i class="fas fa-book-open"></i> Ver Servicios
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>500+</strong>
+          <span>Proyectos asesorados</span>
+        </div>
+        <div class="hero-stat">
+          <strong>98%</strong>
+          <span>Tasa de aprobación</span>
+        </div>
+        <div class="hero-stat">
+          <strong>15+</strong>
+          <span>Universidades atendidas</span>
+        </div>
+        <div class="hero-stat">
+          <strong>8</strong>
+          <span>Áreas de especialidad</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3><i class="fas fa-graduation-cap" style="margin-right:8px"></i>Nuestros Servicios Principales</h3>
+      <div class="service-pill"><i class="fas fa-file-alt"></i><span>Elaboración de tesis y proyectos de grado</span></div>
+      <div class="service-pill"><i class="fas fa-chart-bar"></i><span>Análisis estadístico con SPSS, R y Stata</span></div>
+      <div class="service-pill"><i class="fas fa-microscope"></i><span>Metodología de la investigación científica</span></div>
+      <div class="service-pill"><i class="fas fa-scroll"></i><span>Artículos científicos y publicaciones</span></div>
+      <div class="service-pill"><i class="fas fa-chalkboard-teacher"></i><span>Capacitaciones y talleres académicos</span></div>
+      <div class="service-pill"><i class="fas fa-search"></i><span>Revisión sistemática y estado del arte</span></div>
+      <div class="service-pill"><i class="fas fa-language"></i><span>Corrección de estilo APA, Vancouver, ISO</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECCIÓN 2: QUIÉNES SOMOS                   -->
+<!-- ═══════════════════════════════════════════ -->
+<section id="quienes-somos">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img">
+        <div class="about-img-content">
+          <div class="about-initial">OF</div>
+          <h3>Ing. Alfonzo Evaristo<br>Oraquine Fernández</h3>
+          <p>Responsable General &amp; Asesor Científico Principal</p>
+          <div class="credential-badge">
+            <i class="fas fa-award"></i>
+            Especialista en Metodología de Investigación
+          </div>
+          <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;">
+            <div class="credential-badge" style="justify-content:center;">
+              <i class="fas fa-university"></i>
+              Docente Universitario — I.S.T.A. Sajama
+            </div>
+            <div class="credential-badge" style="justify-content:center;">
+              <i class="fas fa-map-marker-alt"></i>
+              Bolivia · Cochabamba · La Paz · Oruro
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-label">Quiénes Somos</div>
+        <h2>Una institución comprometida con la excelencia académica</h2>
+        <p>
+          <strong>Asesores de Investigación Alma</strong> es una empresa boliviana especializada en el asesoramiento académico, metodológico, estadístico y científico. Fundada con el propósito de democratizar el acceso a orientación de calidad en el ámbito universitario y de posgrado, nuestra institución opera con rigor disciplinar y compromiso ético en todas sus intervenciones.
+        </p>
+        <p>
+          Nuestro equipo está conformado por profesionales con formación avanzada en diversas áreas del conocimiento, quienes acompañan al investigador desde la formulación del problema científico hasta la sustentación y publicación de resultados. Atendemos a estudiantes, profesionales en formación continua, docentes e instituciones educativas en todo el territorio nacional.
+        </p>
+        <p>
+          La experiencia acumulada en más de medio millar de proyectos académicos nos posiciona como referentes del asesoramiento científico en Bolivia, con un enfoque metodológico riguroso, ético y orientado a resultados verificables.
+        </p>
+        <ul class="feature-list">
+          <li><i class="fas fa-check-circle"></i><span>Experiencia comprobada en múltiples disciplinas científicas</span></li>
+          <li><i class="fas fa-check-circle"></i><span>Atención personalizada y seguimiento continuo del proceso investigativo</span></li>
+          <li><i class="fas fa-check-circle"></i><span>Dominio de normativas APA 7.ª edición, Vancouver e ISO 690</span></li>
+          <li><i class="fas fa-check-circle"></i><span>Confidencialidad absoluta en todos los proyectos académicos</span></li>
+          <li><i class="fas fa-check-circle"></i><span>Modalidad presencial y virtual adaptada a su disponibilidad</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECCIÓN 3: MISIÓN, VISIÓN Y VALORES        -->
+<!-- ═══════════════════════════════════════════ -->
+<section id="mision">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Identidad Institucional</div>
+      <h2>Misión, Visión y Valores</h2>
+      <p>Los principios que orientan cada intervención académica y definen nuestra responsabilidad con la comunidad científica boliviana.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="mission-grid">
+      <div class="mission-card">
+        <div class="mission-icon"><i class="fas fa-bullseye"></i></div>
+        <h3>Misión</h3>
+        <p>Brindar asesoramiento académico, metodológico y estadístico de alta calidad a estudiantes, investigadores y profesionales bolivianos, contribuyendo al fortalecimiento de la producción científica nacional mediante orientación especializada, ética y fundamentada en los más rigurosos estándares de la investigación científica contemporánea.</p>
+      </div>
+      <div class="mission-card featured">
+        <div class="mission-icon"><i class="fas fa-eye"></i></div>
+        <h3>Visión</h3>
+        <p>Consolidarse como la institución líder en asesoramiento académico y científico en Bolivia, reconocida por su excelencia metodológica, su contribución al desarrollo de capacidades investigativas y su compromiso con la democratización del conocimiento científico en el contexto universitario y de posgrado nacional.</p>
+      </div>
+      <div class="mission-card">
+        <div class="mission-icon"><i class="fas fa-compass"></i></div>
+        <h3>Propósito</h3>
+        <p>Transformar la manera en que los investigadores bolivianos abordan la ciencia, dotándolos de las herramientas conceptuales, metodológicas y técnicas necesarias para generar conocimiento válido, confiable y pertinente, con impacto real en el desarrollo académico y social del país.</p>
+      </div>
+    </div>
+    <div class="values-grid">
+      <div class="value-item"><i class="fas fa-balance-scale"></i><strong>Rigor Científico</strong><span>Adherencia estricta a metodologías validadas</span></div>
+      <div class="value-item"><i class="fas fa-shield-alt"></i><strong>Ética Académica</strong><span>Transparencia e integridad en todo proceso</span></div>
+      <div class="value-item"><i class="fas fa-user-check"></i><strong>Responsabilidad</strong><span>Compromiso con los objetivos del cliente</span></div>
+      <div class="value-item"><i class="fas fa-star"></i><strong>Excelencia</strong><span>Estándares de calidad superiores</span></div>
+      <div class="value-item"><i class="fas fa-handshake"></i><strong>Confidencialidad</strong><span>Protección total de la información</span></div>
+      <div class="value-item"><i class="fas fa-lightbulb"></i><strong>Innovación</strong><span>Enfoques metodológicos actualizados</span></div>
+      <div class="value-item"><i class="fas fa-users"></i><strong>Inclusión</strong><span>Acceso equitativo al conocimiento</span></div>
+      <div class="value-item"><i class="fas fa-graduation-cap"></i><strong>Formación</strong><span>Desarrollo de capacidades investigativas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECCIÓN 4: SERVICIOS ACADÉMICOS            -->
+<!-- ═══════════════════════════════════════════ -->
+<section id="servicios">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Servicios Académicos</div>
+      <h2>Apoyo integral en cada etapa de su investigación</h2>
+      <p>Ofrecemos una gama completa de servicios especializados, diseñados para responder a las necesidades metodológicas, técnicas y documentales de investigadores en todos los niveles de formación.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-number">01 — TESIS</div>
+        <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+        <h3>Elaboración de Tesis y Proyectos de Grado</h3>
+        <p>Acompañamiento integral desde la delimitación del problema científico hasta la redacción final del informe de investigación, incluyendo revisión de jurados y sustentación oral.</p>
+        <div class="service-tags">
+          <span class="tag">Pregrado</span>
+          <span class="tag">Posgrado</span>
+          <span class="tag">Diplomados</span>
+          <span class="tag">Maestrías</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">02 — ESTADÍSTICA</div>
+        <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+        <h3>Análisis Estadístico Avanzado</h3>
+        <p>Procesamiento y análisis cuantitativo de datos con software especializado. Estadística descriptiva e inferencial, regresión, análisis multivariado, tablas y figuras según APA 7.</p>
+        <div class="service-tags">
+          <span class="tag">SPSS</span>
+          <span class="tag">R Studio</span>
+          <span class="tag">Stata</span>
+          <span class="tag">Excel</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">03 — METODOLOGÍA</div>
+        <div class="service-icon"><i class="fas fa-sitemap"></i></div>
+        <h3>Diseño Metodológico de Investigación</h3>
+        <p>Formulación del marco metodológico: enfoque, tipo, diseño, población, muestra, técnicas e instrumentos de recolección de datos, validez y confiabilidad.</p>
+        <div class="service-tags">
+          <span class="tag">Cuantitativo</span>
+          <span class="tag">Cualitativo</span>
+          <span class="tag">Mixto</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">04 — MONOGRAFÍAS</div>
+        <div class="service-icon"><i class="fas fa-book"></i></div>
+        <h3>Monografías y Trabajos Académicos</h3>
+        <p>Redacción y estructuración de monografías, ensayos académicos, informes de práctica, trabajos de grado de diplomado y otros documentos académicos formales.</p>
+        <div class="service-tags">
+          <span class="tag">UMSS</span>
+          <span class="tag">UMSA</span>
+          <span class="tag">USB</span>
+          <span class="tag">Salesiana</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">05 — ARTÍCULOS</div>
+        <div class="service-icon"><i class="fas fa-scroll"></i></div>
+        <h3>Artículos Científicos y Publicaciones</h3>
+        <p>Redacción de artículos originales para revistas científicas indexadas, siguiendo las normas editoriales de cada publicación (IMRAD, Vancouver, APA, Chicago).</p>
+        <div class="service-tags">
+          <span class="tag">Scielo</span>
+          <span class="tag">Scopus</span>
+          <span class="tag">Latindex</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">06 — INSTRUMENTOS</div>
+        <div class="service-icon"><i class="fas fa-clipboard-list"></i></div>
+        <h3>Diseño de Instrumentos de Recolección</h3>
+        <p>Elaboración y validación de cuestionarios, guías de entrevista, fichas de observación, rúbricas, listas de cotejo y demás instrumentos de investigación empírica.</p>
+        <div class="service-tags">
+          <span class="tag">Validez</span>
+          <span class="tag">Confiabilidad</span>
+          <span class="tag">Alfa de Cronbach</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">07 — MARCO TEÓRICO</div>
+        <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+        <h3>Marco Teórico y Estado del Arte</h3>
+        <p>Revisión sistemática de literatura científica, construcción del marco referencial, antecedentes nacionales e internacionales, con citas y referencias en formato APA o Vancouver.</p>
+        <div class="service-tags">
+          <span class="tag">APA 7</span>
+          <span class="tag">Vancouver</span>
+          <span class="tag">ISO 690</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">08 — CAPACITACIÓN</div>
+        <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <h3>Capacitaciones y Talleres Académicos</h3>
+        <p>Talleres presenciales y virtuales sobre metodología de la investigación, manejo de software estadístico, redacción científica y gestión de referencias bibliográficas.</p>
+        <div class="service-tags">
+          <span class="tag">Institucional</span>
+          <span class="tag">Individual</span>
+          <span class="tag">Online</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">09 — COTIZACIÓN</div>
+        <div class="service-icon"><i class="fas fa-calculator"></i></div>
+        <h3>Cotización y Consultoría en Línea</h3>
+        <p>Evaluación gratuita del proyecto académico, estimación de costos, tiempos de entrega y propuesta de trabajo personalizada, con asesoría previa sin compromiso.</p>
+        <div class="service-tags">
+          <span class="tag">Gratuita</span>
+          <span class="tag">Sin compromiso</span>
+          <span class="tag">24h respuesta</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AGENDA DE ASESORÍAS -->
+    <div style="margin-top:48px;">
+      <div class="section-header" style="margin-bottom:28px;">
+        <div class="section-label">Agenda Virtual</div>
+        <h2 style="font-size:1.8rem;">Disponibilidad para Asesorías</h2>
+        <p>Reserve su sesión en la franja horaria disponible. Confirmación inmediata por WhatsApp.</p>
+      </div>
+      <div class="agenda-section">
+        <div class="agenda-header">
+          <h4><i class="fas fa-calendar-check" style="margin-right:8px;color:var(--accent)"></i>Lunes 2 de Junio, 2025</h4>
+          <span>Zona Horaria: Bolivia (BOT, UTC-4)</span>
+        </div>
+        <div class="agenda-body">
+          <div class="slot">
+            <span class="slot-time">08:00 – 09:00</span>
+            <span class="slot-dot busy"></span>
+            <div class="slot-info"><strong>Asesoría Tesis — Estadística Inferencial</strong><span>Sesión reservada</span></div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">09:30 – 10:30</span>
+            <span class="slot-dot free"></span>
+            <div class="slot-info"><strong>Disponible</strong><span>Metodología de la Investigación</span></div>
+            <button class="btn-book" onclick="showToast('¡Solicitud enviada! Le confirmaremos por WhatsApp.')">Reservar</button>
+          </div>
+          <div class="slot">
+            <span class="slot-time">11:00 – 12:00</span>
+            <span class="slot-dot free"></span>
+            <div class="slot-info"><strong>Disponible</strong><span>Análisis Estadístico / SPSS</span></div>
+            <button class="btn-book" onclick="showToast('¡Solicitud enviada! Le confirmaremos por WhatsApp.')">Reservar</button>
+          </div>
+          <div class="slot">
+            <span class="slot-time">14:00 – 15:00</span>
+            <span class="slot-dot tentative"></span>
+            <div class="slot-info"><strong>Tentativo</strong><span>Consultar disponibilidad</span></div>
+            <button class="btn-book" onclick="showToast('Solicitud de consulta enviada.')">Consultar</button>
+          </div>
+          <div class="slot">
+            <span class="slot-time">15:30 – 16:30</span>
+            <span class="slot-dot free"></span>
+            <div class="slot-info"><strong>Disponible</strong><span>Marco Teórico / Redacción Científica</span></div>
+            <button class="btn-book" onclick="showToast('¡Solicitud enviada! Le confirmaremos por WhatsApp.')">Reservar</button>
+          </div>
+          <div class="slot">
+            <span class="slot-time">17:00 – 18:00</span>
+            <span class="slot-dot busy"></span>
+            <div class="slot-info"><strong>Capacitación Grupal — APA 7</strong><span>Sesión reservada</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECCIÓN 5: BIBLIOTECA DIGITAL              -->
+<!-- ═══════════════════════════════════════════ -->
+<section id="biblioteca">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Biblioteca Digital</div>
+      <h2>Recursos académicos organizados y de acceso controlado</h2>
+      <p>Acceda a guías metodológicas, plantillas normalizadas, manuales de citación, instrumentos validados y materiales de capacitación elaborados por nuestro equipo especializado.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="library-search">
+      <input class="search-input" type="text" placeholder="Buscar documentos, guías, plantillas..." id="searchInput">
+      <button class="search-btn" onclick="searchDocs()"><i class="fas fa-search"></i> Buscar</button>
+    </div>
+
+    <div class="library-cats">
+      <button class="cat-pill active" onclick="filterCat(this,'todos')">Todos los recursos</button>
+      <button class="cat-pill" onclick="filterCat(this,'metodologia')">Metodología</button>
+      <button class="cat-pill" onclick="filterCat(this,'estadistica')">Estadística</button>
+      <button class="cat-pill" onclick="filterCat(this,'plantillas')">Plantillas</button>
+      <button class="cat-pill" onclick="filterCat(this,'citacion')">Citación APA/Vancouver</button>
+      <button class="cat-pill" onclick="filterCat(this,'instrumentos')">Instrumentos</button>
+    </div>
+
+    <div class="docs-grid" id="docsGrid">
+      <div class="doc-card" data-cat="metodologia">
+        <div class="doc-icon">📘</div>
+        <span class="doc-type pdf">PDF</span>
+        <h4>Guía de Diseño Metodológico para Tesis</h4>
+        <span>2.4 MB · Actualizado 2025</span>
+        <button class="doc-download" onclick="showToast('Iniciando descarga...')"><i class="fas fa-download"></i> Descargar</button>
+      </div>
+      <div class="doc-card" data-cat="estadistica">
+        <div class="doc-icon">📊</div>
+        <span class="doc-type excel">XLSX</span>
+        <h4>Plantilla de Análisis Estadístico SPSS</h4>
+        <span>1.1 MB · Actualizado 2025</span>
+        <button class="doc-download" onclick="showToast('Iniciando descarga...')"><i class="fas fa-download"></i> Descargar</button>
+      </div>
+      <div class="doc-card" data-cat="plantillas">
+        <div class="doc-icon">📝</div>
+        <span class="doc-type word">DOCX</span>
+        <h4>Plantilla Tesis UMSS — APA 7</h4>
+        <span>0.8 MB · Actualizado 2025</span>
+        <button class="doc-download" onclick="showToast('Iniciando descarga...')"><i class="fas fa-download"></i> Descargar</button>
+      </div>
+      <div class="doc-card" data-cat="citacion">
+        <div class="doc-icon">📋</div>
+        <span class="doc-type pdf">PDF</span>
+        <h4>Manual de Citación APA 7.ª Edición</h4>
+        <span>3.2 MB · Actualizado 2024</span>
+        <button class="doc-download" onclick="showToast('Iniciando descarga...')"><i class="fas fa-download"></i> Descargar</button>
+      </div>
+      <div class="doc-card" data-cat="instrumentos">
+        <div class="doc-icon">📑</div>
+        <span class="doc-type word">DOCX</span>
+        <h4>Modelos de Cuestionarios Validados</h4>
+        <span>1.5 MB · Actualizado 2025</span>
+        <button class="doc-download" onclick="showToast('Iniciando descarga...')"><i class="fas fa-download"></i> Descargar</button>
+      </div>
+      <div class="doc-card" data-cat="metodologia">
+        <div class="doc-icon">🎓</div>
+        <span class="doc-type ppt">PPTX</span>
+        <h4>Tipos y Diseños de Investigación</h4>
+        <span>4.7 MB · Actualizado 2025</span>
+        <button class="doc-download" onclick="showToast('Iniciando descarga...')"><i class="fas fa-download"></i> Descargar</button>
+      </div>
+      <div class="doc-card" data-cat="estadistica">
+        <div class="doc-icon">📈</div>
+        <span class="doc-type pdf">PDF</span>
+        <h4>Guía de Estadística Descriptiva e Inferencial</h4>
+        <span>2.9 MB · Actualizado 2024</span>
+        <button class="doc-download" onclick="showToast('Iniciando descarga...')"><i class="fas fa-download"></i> Descargar</button>
+      </div>
+      <div class="doc-card" data-cat="plantillas">
+        <div class="doc-icon">📄</div>
+        <span class="doc-type word">DOCX</span>
+        <h4>Plantilla Monografía — Diplomado</h4>
+        <span>0.6 MB · Actualizado 2025</span>
+        <button class="doc-download" onclick="showToast('Iniciando descarga...')"><i class="fas fa-download"></i> Descargar</button>
+      </div>
+    </div>
+
+    <!-- REPOSITORIO DE FUENTES CIENTÍFICAS -->
+    <div style="margin-top:56px;">
+      <div class="section-header" style="margin-bottom:28px;">
+        <div class="section-label">Repositorio Científico</div>
+        <h2 style="font-size:1.8rem;">Fuentes y Bases de Datos Recomendadas</h2>
+        <p>Accesos directos a las principales bases de datos científicas y repositorios institucionales para el proceso de revisión bibliográfica.</p>
+      </div>
+      <div class="repo-section">
+        <div class="repo-items">
+          <a class="repo-item" href="https://scielo.org" target="_blank"><i class="fas fa-globe"></i><div class="repo-item-text"><strong>SciELO Bolivia</strong><span>Revistas científicas latinoamericanas</span></div></a>
+          <a class="repo-item" href="https://scholar.google.com" target="_blank"><i class="fas fa-search"></i><div class="repo-item-text"><strong>Google Scholar</strong><span>Buscador académico multidisciplinar</span></div></a>
+          <a class="repo-item" href="https://pubmed.ncbi.nlm.nih.gov" target="_blank"><i class="fas fa-heartbeat"></i><div class="repo-item-text"><strong>PubMed / MEDLINE</strong><span>Literatura biomédica internacional</span></div></a>
+          <a class="repo-item" href="https://www.scopus.com" target="_blank"><i class="fas fa-database"></i><div class="repo-item-text"><strong>Scopus</strong><span>Base de datos indexada Elsevier</span></div></a>
+          <a class="repo-item" href="https://www.redalyc.org" target="_blank"><i class="fas fa-book-open"></i><div class="repo-item-text"><strong>Redalyc</strong><span>Red de revistas científicas de América Latina</span></div></a>
+          <a class="repo-item" href="https://dialnet.unirioja.es" target="_blank"><i class="fas fa-graduation-cap"></i><div class="repo-item-text"><strong>Dialnet</strong><span>Portal bibliográfico iberoamericano</span></div></a>
+          <a class="repo-item" href="https://www.latindex.org" target="_blank"><i class="fas fa-star"></i><div class="repo-item-text"><strong>Latindex</strong><span>Sistema regional de información científica</span></div></a>
+          <a class="repo-item" href="https://eric.ed.gov" target="_blank"><i class="fas fa-chalkboard"></i><div class="repo-item-text"><strong>ERIC</strong><span>Información en Educación (EE. UU.)</span></div></a>
+          <a class="repo-item" href="https://repositorio.umss.edu.bo" target="_blank"><i class="fas fa-university"></i><div class="repo-item-text"><strong>Repositorio UMSS</strong><span>Universidad Mayor de San Simón</span></div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECCIÓN 6: CURSOS Y CAPACITACIONES         -->
+<!-- ═══════════════════════════════════════════ -->
+<section id="cursos">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Formación Académica</div>
+      <h2>Cursos y Capacitaciones Especializadas</h2>
+      <p>Programas formativos diseñados para fortalecer las competencias investigativas de estudiantes, docentes y profesionales en ejercicio.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card">
+        <div class="course-img">🔬<span class="course-img-label">Online</span></div>
+        <div class="course-body">
+          <h3>Metodología de la Investigación Científica</h3>
+          <p>Fundamentos epistemológicos, diseño de investigación, formulación del problema, objetivos e hipótesis. Enfoque cuantitativo, cualitativo y mixto.</p>
+          <div class="course-meta">
+            <div class="course-meta-item"><i class="fas fa-clock"></i>40 horas</div>
+            <div class="course-meta-item"><i class="fas fa-signal"></i>Básico – Avanzado</div>
+            <div class="course-meta-item"><i class="fas fa-certificate"></i>Certificado</div>
+          </div>
+          <a href="#solicitud" class="btn-course">Inscribirme al Curso</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-img">📊<span class="course-img-label">Presencial</span></div>
+        <div class="course-body">
+          <h3>Análisis Estadístico con SPSS y R</h3>
+          <p>Manejo de software estadístico para investigación. Pruebas paramétricas y no paramétricas, correlación, regresión e interpretación de resultados.</p>
+          <div class="course-meta">
+            <div class="course-meta-item"><i class="fas fa-clock"></i>32 horas</div>
+            <div class="course-meta-item"><i class="fas fa-signal"></i>Intermedio</div>
+            <div class="course-meta-item"><i class="fas fa-certificate"></i>Certificado</div>
+          </div>
+          <a href="#solicitud" class="btn-course">Inscribirme al Curso</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-img">✍️<span class="course-img-label">Online</span></div>
+        <div class="course-body">
+          <h3>Redacción Científica y Normas APA 7</h3>
+          <p>Elaboración de textos académicos con rigor formal. Aplicación práctica de APA 7.ª edición, Vancouver e ISO 690 en artículos, tesis y monografías.</p>
+          <div class="course-meta">
+            <div class="course-meta-item"><i class="fas fa-clock"></i>24 horas</div>
+            <div class="course-meta-item"><i class="fas fa-signal"></i>Básico</div>
+            <div class="course-meta-item"><i class="fas fa-certificate"></i>Certificado</div>
+          </div>
+          <a href="#solicitud" class="btn-course">Inscribirme al Curso</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-img">🗃️<span class="course-img-label">Online</span></div>
+        <div class="course-body">
+          <h3>Gestión de Referencias con Zotero y Mendeley</h3>
+          <p>Organización eficiente de fuentes bibliográficas, importación automática de citas y generación de referencias en múltiples estilos académicos.</p>
+          <div class="course-meta">
+            <div class="course-meta-item"><i class="fas fa-clock"></i>16 horas</div>
+            <div class="course-meta-item"><i class="fas fa-signal"></i>Básico</div>
+            <div class="course-meta-item"><i class="fas fa-certificate"></i>Certificado</div>
+          </div>
+          <a href="#solicitud" class="btn-course">Inscribirme al Curso</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-img">📋<span class="course-img-label">Taller</span></div>
+        <div class="course-body">
+          <h3>Elaboración de Instrumentos de Investigación</h3>
+          <p>Diseño, validación y aplicación de cuestionarios, entrevistas y observaciones. Análisis de validez y confiabilidad mediante Alfa de Cronbach.</p>
+          <div class="course-meta">
+            <div class="course-meta-item"><i class="fas fa-clock"></i>20 horas</div>
+            <div class="course-meta-item"><i class="fas fa-signal"></i>Intermedio</div>
+            <div class="course-meta-item"><i class="fas fa-certificate"></i>Certificado</div>
+          </div>
+          <a href="#solicitud" class="btn-course">Inscribirme al Curso</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-img">🏛️<span class="course-img-label">Institucional</span></div>
+        <div class="course-body">
+          <h3>Seminario Institucional de Investigación</h3>
+          <p>Programa personalizado para instituciones educativas, con enfoque en el fortalecimiento de la cultura investigativa y la producción científica institucional.</p>
+          <div class="course-meta">
+            <div class="course-meta-item"><i class="fas fa-clock"></i>A medida</div>
+            <div class="course-meta-item"><i class="fas fa-signal"></i>Todos los niveles</div>
+            <div class="course-meta-item"><i class="fas fa-certificate"></i>Certificado</div>
+          </div>
+          <a href="#solicitud" class="btn-course">Solicitar Información</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECCIÓN 7: BLOG DE INVESTIGACIÓN           -->
+<!-- ═══════════════════════════════════════════ -->
+<section id="blog">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Blog Académico</div>
+      <h2>Blog de Investigación Científica</h2>
+      <p>Artículos, guías y recursos actualizados sobre metodología, estadística, redacción científica y novedades en el ámbito académico boliviano.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-main">
+        <div class="blog-card">
+          <div class="blog-img">
+            📚
+            <span class="blog-cat">Metodología</span>
+          </div>
+          <div class="blog-body">
+            <div class="meta">
+              <span><i class="fas fa-user" style="margin-right:4px"></i>Ing. Oraquine Fernández</span>
+              <span><i class="fas fa-calendar" style="margin-right:4px"></i>28 mayo, 2025</span>
+              <span><i class="fas fa-eye" style="margin-right:4px"></i>1.247 vistas</span>
+            </div>
+            <h3>¿Cómo elegir el diseño de investigación adecuado para su tesis?</h3>
+            <p>La selección del diseño de investigación constituye una decisión metodológica central en todo proceso científico. Un diseño inadecuado compromete la validez interna y externa del estudio, así como la pertinencia de las conclusiones. En este artículo examinamos los criterios clave para elegir entre diseños experimentales, cuasi-experimentales, descriptivos y correlacionales...</p>
+            <a href="#" class="read-more">Leer artículo completo <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="blog-card" style="margin-top:20px;">
+          <div class="blog-img" style="font-size:3.5rem;">
+            📊
+            <span class="blog-cat">Estadística</span>
+          </div>
+          <div class="blog-body">
+            <div class="meta">
+              <span><i class="fas fa-user" style="margin-right:4px"></i>Asesores Alma</span>
+              <span><i class="fas fa-calendar" style="margin-right:4px"></i>15 mayo, 2025</span>
+              <span><i class="fas fa-eye" style="margin-right:4px"></i>983 vistas</span>
+            </div>
+            <h3>Pruebas estadísticas para tesis: ¿cuándo usar paramétrico vs. no paramétrico?</h3>
+            <p>Uno de los errores más frecuentes en la investigación cuantitativa es la selección incorrecta de pruebas estadísticas. La decisión entre métodos paramétricos y no paramétricos depende de la distribución de los datos, el tamaño muestral y el nivel de medición de las variables...</p>
+            <a href="#" class="read-more">Leer artículo completo <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-sidebar">
+        <div class="sidebar-card">
+          <h4>Artículos Recientes</h4>
+          <div class="mini-post">
+            <div class="mini-post-icon">✍️</div>
+            <div class="mini-post-text"><h5>Guía práctica para citar fuentes en APA 7</h5><span>22 mayo, 2025</span></div>
+          </div>
+          <div class="mini-post">
+            <div class="mini-post-icon">🔍</div>
+            <div class="mini-post-text"><h5>Cómo construir el estado del arte de su tesis</h5><span>10 mayo, 2025</span></div>
+          </div>
+          <div class="mini-post">
+            <div class="mini-post-icon">📋</div>
+            <div class="mini-post-text"><h5>Validación de instrumentos: Alfa de Cronbach paso a paso</h5><span>3 mayo, 2025</span></div>
+          </div>
+          <div class="mini-post">
+            <div class="mini-post-icon">📈</div>
+            <div class="mini-post-text"><h5>Interpretación de tablas y figuras en investigación cuantitativa</h5><span>28 abril, 2025</span></div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Categorías Temáticas</h4>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;">
+            <span class="tag" style="cursor:pointer;">Metodología (14)</span>
+            <span class="tag" style="cursor:pointer;">Estadística (11)</span>
+            <span class="tag" style="cursor:pointer;">Redacción Científica (9)</span>
+            <span class="tag" style="cursor:pointer;">APA 7 (7)</span>
+            <span class="tag" style="cursor:pointer;">Tesis (12)</span>
+            <span class="tag" style="cursor:pointer;">Instrumentos (5)</span>
+            <span class="tag" style="cursor:pointer;">Software (8)</span>
+            <span class="tag" style="cursor:pointer;">Noticias (4)</span>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Suscribirse al Boletín</h4>
+          <p style="font-size:0.82rem;color:var(--gray-500);margin-bottom:12px;">Reciba artículos y recursos académicos directamente en su correo electrónico.</p>
+          <input class="search-input" type="email" placeholder="correo@ejemplo.com" style="margin-bottom:10px;width:100%;">
+          <button class="search-btn" style="width:100%;justify-content:center;" onclick="showToast('¡Suscripción exitosa! Gracias por suscribirse.')"><i class="fas fa-paper-plane"></i> Suscribirme</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECCIÓN 8: TESTIMONIOS                     -->
+<!-- ═══════════════════════════════════════════ -->
+<section id="testimonios">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Casos de Éxito</div>
+      <h2>Lo que dicen nuestros clientes</h2>
+      <p>Testimonios de estudiantes, investigadores y profesionales que confiaron en Asesores de Investigación Alma para alcanzar sus metas académicas.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"El apoyo en el diseño metodológico de mi tesis doctoral fue excepcional. El Ing. Oraquine me orientó con precisión en la selección del enfoque mixto y en el análisis estadístico multivariado. Defendí con distinción máxima."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">MR</div>
+          <div class="author-info">
+            <strong>Lic. María Rojas</strong>
+            <span>Doctorante en Ciencias de la Educación — UMSS, Cochabamba</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Gracias al asesoramiento recibido, logré publicar mi primer artículo científico en una revista indexada en Latindex. El apoyo en la estructuración IMRAD y en las normas Vancouver fue fundamental para la aceptación editorial."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">CV</div>
+          <div class="author-info">
+            <strong>Dr. Carlos Vega</strong>
+            <span>Médico Internista — Universidad Mayor de San Andrés, La Paz</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"El servicio de análisis estadístico con SPSS fue exactamente lo que necesitaba para completar el capítulo de resultados de mi tesis de maestría. El análisis fue riguroso, claro y totalmente adaptado a las exigencias de mi institución."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AP</div>
+          <div class="author-info">
+            <strong>Ing. Ana Pardo</strong>
+            <span>Maestrante en Gestión de Empresas — UMSA, La Paz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  CTA BANNER                                 -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="cta-banner">
+  <div class="container">
+    <h2>¿Listo para avanzar en su investigación?</h2>
+    <p>Solicite una evaluación gratuita de su proyecto académico. Respuesta garantizada en menos de 24 horas.</p>
+    <div class="cta-actions">
+      <a href="#solicitud" class="btn-primary"><i class="fas fa-paper-plane"></i> Solicitar Asesoría Gratuita</a>
+      <a href="https://wa.me/59170000000" target="_blank" class="btn-outline" style="border-color:rgba(255,255,255,0.5)"><i class="fab fa-whatsapp"></i> Consultar por WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECCIÓN 9: SOLICITUD DE SERVICIOS          -->
+<!-- ═══════════════════════════════════════════ -->
+<section id="solicitud">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Solicitud en Línea</div>
+      <h2>Solicite su Servicio Académico</h2>
+      <p>Complete el formulario con la información de su proyecto. Nuestro equipo evaluará su solicitud y le enviará una propuesta personalizada en un plazo máximo de 24 horas hábiles.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="form-grid">
+      <div class="form-info">
+        <h3>Canales de Atención Disponibles</h3>
+        <p>Puede solicitar nuestros servicios a través de cualquiera de los siguientes medios de contacto. El equipo de Asesores de Investigación Alma le responderá a la brevedad posible con una propuesta de trabajo adaptada a sus necesidades.</p>
+        <div class="contact-options">
+          <a class="contact-opt" href="https://wa.me/59170000000" target="_blank">
+            <div class="contact-opt-icon wa"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-opt-text"><strong>WhatsApp Directo</strong><span>+591 7 000 0000 — Respuesta inmediata</span></div>
+            <i class="fas fa-external-link-alt" style="margin-left:auto;color:var(--gray-200);font-size:0.8rem;"></i>
+          </a>
+          <a class="contact-opt" href="https://facebook.com/asesoresalma" target="_blank">
+            <div class="contact-opt-icon fb"><i class="fab fa-facebook-messenger"></i></div>
+            <div class="contact-opt-text"><strong>Messenger Facebook</strong><span>Asesores de Investigación Alma</span></div>
+            <i class="fas fa-external-link-alt" style="margin-left:auto;color:var(--gray-200);font-size:0.8rem;"></i>
+          </a>
+          <a class="contact-opt" href="mailto:info@asesoresalma.bo">
+            <div class="contact-opt-icon mail"><i class="fas fa-envelope"></i></div>
+            <div class="contact-opt-text"><strong>Correo Electrónico</strong><span>info@asesoresalma.bo</span></div>
+            <i class="fas fa-external-link-alt" style="margin-left:auto;color:var(--gray-200);font-size:0.8rem;"></i>
+          </a>
+        </div>
+
+        <div style="margin-top:28px;">
+          <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--navy);margin-bottom:14px;">Información para Cotización</h3>
+          <ul class="feature-list">
+            <li><i class="fas fa-info-circle"></i><span>Nivel académico del proyecto (pregrado, posgrado, diplomado)</span></li>
+            <li><i class="fas fa-info-circle"></i><span>Institución y programa de estudio</span></li>
+            <li><i class="fas fa-info-circle"></i><span>Tipo de servicio requerido</span></li>
+            <li><i class="fas fa-info-circle"></i><span>Fecha límite de entrega</span></li>
+            <li><i class="fas fa-info-circle"></i><span>Estado actual del proyecto</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="form-panel">
+        <h3><i class="fas fa-file-signature" style="margin-right:8px;color:var(--accent)"></i>Formulario de Solicitud</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre(s) <span>*</span></label>
+            <input class="form-control" type="text" placeholder="Su nombre">
+          </div>
+          <div class="form-group">
+            <label>Apellidos <span>*</span></label>
+            <input class="form-control" type="text" placeholder="Sus apellidos">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Correo Electrónico <span>*</span></label>
+            <input class="form-control" type="email" placeholder="correo@ejemplo.com">
+          </div>
+          <div class="form-group">
+            <label>WhatsApp <span>*</span></label>
+            <input class="form-control" type="tel" placeholder="+591 7 000 0000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Servicio Requerido <span>*</span></label>
+          <select class="form-control">
+            <option value="">— Seleccione el servicio —</option>
+            <option>Elaboración de Tesis / Proyecto de Grado</option>
+            <option>Análisis Estadístico (SPSS / R / Stata)</option>
+            <option>Diseño Metodológico</option>
+            <option>Monografía / Trabajo de Diplomado</option>
+            <option>Artículo Científico</option>
+            <option>Marco Teórico / Estado del Arte</option>
+            <option>Diseño de Instrumentos de Investigación</option>
+            <option>Corrección y Estilo APA/Vancouver</option>
+            <option>Capacitación / Taller Académico</option>
+            <option>Cotización General / Consulta</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Institución</label>
+            <input class="form-control" type="text" placeholder="Ej. UMSS, UMSA, USB…">
+          </div>
+          <div class="form-group">
+            <label>Nivel Académico</label>
+            <select class="form-control">
+              <option value="">— Seleccione —</option>
+              <option>Pregrado / Licenciatura</option>
+              <option>Diplomado</option>
+              <option>Especialidad</option>
+              <option>Maestría</option>
+              <option>Doctorado</option>
+              <option>Profesional en ejercicio</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Descripción del Proyecto / Consulta <span>*</span></label>
+          <textarea class="form-control" placeholder="Describa brevemente su proyecto, el estado actual en que se encuentra, el área disciplinar y las necesidades específicas de asesoramiento..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Fecha Límite de Entrega</label>
+          <input class="form-control" type="date">
+        </div>
+        <button class="btn-submit" onclick="submitForm()">
+          <i class="fas fa-paper-plane"></i> Enviar Solicitud de Asesoría
+        </button>
+        <p class="form-note">
+          <i class="fas fa-lock" style="margin-right:4px;color:var(--gray-200)"></i>
+          Su información es confidencial y se utilizará exclusivamente para la gestión de su solicitud académica.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECCIÓN 10: CONTACTO                       -->
+<!-- ═══════════════════════════════════════════ -->
+<section id="contacto" style="background:var(--off-white);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Contacto</div>
+      <h2>Estamos a su disposición</h2>
+      <p>Comuníquese con Asesores de Investigación Alma a través del canal de su preferencia. Brindamos atención personalizada de lunes a sábado.</p>
+      <div class="divider"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+      <div class="mission-card" style="text-align:center;padding:28px 20px;">
+        <div class="mission-icon"><i class="fab fa-whatsapp" style="color:#22c55e"></i></div>
+        <h3 style="font-size:1rem;">WhatsApp</h3>
+        <p style="font-size:0.85rem;">+591 7 000 0000<br>Atención inmediata<br>Lun – Sáb</p>
+        <a href="https://wa.me/59170000000" target="_blank" class="btn-primary" style="margin-top:14px;font-size:0.82rem;padding:8px 16px;display:inline-flex;">Escribir ahora</a>
+      </div>
+      <div class="mission-card" style="text-align:center;padding:28px 20px;">
+        <div class="mission-icon"><i class="fab fa-facebook" style="color:#1877f2"></i></div>
+        <h3 style="font-size:1rem;">Facebook</h3>
+        <p style="font-size:0.85rem;">Asesores de<br>Investigación Alma<br>Messenger disponible</p>
+        <a href="https://facebook.com" target="_blank" class="btn-primary" style="margin-top:14px;font-size:0.82rem;padding:8px 16px;display:inline-flex;">Visitar Página</a>
+      </div>
+      <div class="mission-card" style="text-align:center;padding:28px 20px;">
+        <div class="mission-icon"><i class="fas fa-envelope" style="color:var(--accent)"></i></div>
+        <h3 style="font-size:1rem;">Correo Electrónico</h3>
+        <p style="font-size:0.85rem;">info@asesoresalma.bo<br>Respuesta en<br>24 horas hábiles</p>
+        <a href="mailto:info@asesoresalma.bo" class="btn-primary" style="margin-top:14px;font-size:0.82rem;padding:8px 16px;display:inline-flex;">Enviar Correo</a>
+      </div>
+      <div class="mission-card" style="text-align:center;padding:28px 20px;">
+        <div class="mission-icon"><i class="fas fa-map-marker-alt" style="color:#ef4444"></i></div>
+        <h3 style="font-size:1rem;">Ubicación</h3>
+        <p style="font-size:0.85rem;">Bolivia<br>Cochabamba · La Paz<br>Oruro</p>
+        <a href="#" class="btn-primary" style="margin-top:14px;font-size:0.82rem;padding:8px 16px;display:inline-flex;">Ver en Mapa</a>
+      </div>
+    </div>
+
+    <!-- HORARIOS -->
+    <div style="margin-top:40px;background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-lg);overflow:hidden;">
+      <div style="background:var(--navy);padding:18px 28px;">
+        <h4 style="color:var(--white);font-family:var(--font-display)"><i class="fas fa-clock" style="color:var(--accent);margin-right:8px"></i>Horario de Atención</h4>
+      </div>
+      <div style="padding:24px 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+        <div style="text-align:center;padding:16px;background:var(--gray-50);border-radius:var(--radius);">
+          <strong style="display:block;color:var(--navy);font-size:0.9rem;margin-bottom:4px;">Lunes a Viernes</strong>
+          <span style="font-family:var(--font-mono);color:var(--accent);font-size:1.1rem;font-weight:500;">08:00 – 20:00</span>
+        </div>
+        <div style="text-align:center;padding:16px;background:var(--gray-50);border-radius:var(--radius);">
+          <strong style="display:block;color:var(--navy);font-size:0.9rem;margin-bottom:4px;">Sábados</strong>
+          <span style="font-family:var(--font-mono);color:var(--accent);font-size:1.1rem;font-weight:500;">09:00 – 14:00</span>
+        </div>
+        <div style="text-align:center;padding:16px;background:var(--gray-50);border-radius:var(--radius);">
+          <strong style="display:block;color:var(--navy);font-size:0.9rem;margin-bottom:4px;">Zona Horaria</strong>
+          <span style="font-family:var(--font-mono);color:var(--accent);font-size:1.1rem;font-weight:500;">BOT (UTC-4)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  FOOTER                                     -->
+<!-- ═══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:0;">
+          <div class="logo-icon"></div>
+          <div class="logo-text">
+            <strong>Asesores de Investigación Alma</strong>
+            <span>Asesoramiento Académico y Científico</span>
+          </div>
+        </div>
+        <p style="margin-top:16px;">Institución boliviana especializada en asesoramiento académico, metodológico y estadístico para investigadores, estudiantes, profesionales y docentes a nivel nacional. Ética, rigor y excelencia en cada proyecto.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/59170000000" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="mailto:info@asesoresalma.bo" class="social-icon"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Elaboración de Tesis</a></li>
+          <li><a href="#servicios">Análisis Estadístico</a></li>
+          <li><a href="#servicios">Diseño Metodológico</a></li>
+          <li><a href="#servicios">Monografías</a></li>
+          <li><a href="#servicios">Artículos Científicos</a></li>
+          <li><a href="#servicios">Marco Teórico</a></li>
+          <li><a href="#servicios">Instrumentos</a></li>
+          <li><a href="#solicitud">Cotización</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="#biblioteca">Biblioteca Digital</a></li>
+          <li><a href="#biblioteca">Repositorio Científico</a></li>
+          <li><a href="#cursos">Cursos Online</a></li>
+          <li><a href="#cursos">Talleres Presenciales</a></li>
+          <li><a href="#blog">Blog Académico</a></li>
+          <li><a href="#blog">Guías Metodológicas</a></li>
+          <li><a href="#testimonios">Casos de Éxito</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>+591 7 000 0000</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@asesoresalma.bo</span></div>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Cochabamba · La Paz · Oruro, Bolivia</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Lun – Vie: 08:00 – 20:00<br>Sáb: 09:00 – 14:00</span></div>
+        <div style="margin-top:16px;padding:12px;background:rgba(200,168,75,0.1);border:1px solid rgba(200,168,75,0.2);border-radius:8px;">
+          <strong style="display:block;font-size:0.78rem;color:var(--accent);margin-bottom:2px;">Responsable General</strong>
+          <span style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Ing. Alfonzo Evaristo Oraquine Fernández</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+      <span>© 2025 Asesores de Investigación Alma. Todos los derechos reservados.</span>
+      <span>Diseñado con <i class="fas fa-heart" style="color:var(--accent)"></i> para la comunidad científica boliviana · <a href="#">Política de Privacidad</a> · <a href="#">Términos y Condiciones</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  FLOATING ELEMENTS                          -->
+<!-- ═══════════════════════════════════════════ -->
+
+<!-- CHAT FLOTANTE -->
+<div class="chat-float">
+  <div class="chat-bubble" id="chatBubble">
+    <strong>¿Necesita orientación académica?</strong>
+    <p>Nuestro equipo está disponible para resolver sus consultas sobre tesis, estadística y metodología.</p>
+    <div class="chat-btns">
+      <a href="https://wa.me/59170000000" class="chat-btn wa" target="_blank"><i class="fab fa-whatsapp"></i>Escribir por WhatsApp</a>
+      <a href="https://facebook.com" class="chat-btn fb" target="_blank"><i class="fab fa-facebook-messenger"></i>Messenger Facebook</a>
+    </div>
+  </div>
+  <button class="chat-toggle" id="chatToggle" onclick="toggleChat()" aria-label="Abrir chat">
+    <i class="fas fa-comments" id="chatIcon"></i>
+    <span class="notif">1</span>
+  </button>
+</div>
+
+<!-- SCROLL TO TOP -->
+<a href="#inicio" class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  MODAL: LOGIN / REGISTRO                    -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="modal-overlay" id="loginModal" onclick="closeModalOutside(event,'loginModal')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('loginModal')"><i class="fas fa-times"></i></button>
+    <h3 id="modalTitle">Iniciar Sesión</h3>
+    <p id="modalSubtitle">Acceda a su cuenta para gestionar sus solicitudes y descargar recursos académicos.</p>
+    <div id="loginForm">
+      <div class="form-group">
+        <label>Correo Electrónico</label>
+        <input class="form-control" type="email" placeholder="correo@ejemplo.com">
+      </div>
+      <div class="form-group">
+        <label>Contraseña</label>
+        <input class="form-control" type="password" placeholder="••••••••">
+      </div>
+      <button class="btn-submit" onclick="closeModal('loginModal');showToast('¡Bienvenido a Asesores de Investigación Alma!')">
+        <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+      </button>
+      <div class="login-toggle">
+        ¿No tiene cuenta? <a onclick="switchToRegister()">Regístrese aquí</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ─── NAVIGATION ───
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  function closeMobile() { mobileMenu.classList.remove('open'); }
+
+  // Active nav on scroll
+  const sections = document.querySelectorAll('section[id], .hero');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+    navLinks.forEach(a => {
+      a.classList.remove('active');
+      if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+    });
+
+    // Reading bar
+    const total = document.body.scrollHeight - window.innerHeight;
+    document.getElementById('readingBar').style.width = Math.round(window.scrollY / total * 100) + '%';
+
+    // Scroll top button
+    document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
+  });
+
+  // ─── LIBRARY FILTER ───
+  function filterCat(btn, cat) {
+    document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.doc-card').forEach(card => {
+      card.style.display = (cat === 'todos' || card.dataset.cat === cat) ? 'block' : 'none';
+    });
+  }
+  function searchDocs() {
+    const q = document.getElementById('searchInput').value.toLowerCase();
+    document.querySelectorAll('.doc-card').forEach(card => {
+      card.style.display = card.innerText.toLowerCase().includes(q) ? 'block' : 'none';
+    });
+    showToast(q ? 'Búsqueda realizada: "' + q + '"' : 'Mostrando todos los documentos');
+  }
+  document.getElementById('searchInput').addEventListener('keypress', e => { if(e.key==='Enter') searchDocs(); });
+
+  // ─── CHAT ───
+  let chatOpen = false;
+  setTimeout(() => { document.getElementById('chatBubble').classList.add('open'); chatOpen = true; }, 4000);
+  function toggleChat() {
+    chatOpen = !chatOpen;
+    document.getElementById('chatBubble').classList.toggle('open', chatOpen);
+    document.getElementById('chatIcon').className = chatOpen ? 'fas fa-times' : 'fas fa-comments';
+    document.querySelector('.chat-toggle .notif').style.display = chatOpen ? 'none' : 'flex';
+  }
+
+  // ─── MODALS ───
+  function openModal(id) { document.getElementById(id).classList.add('open'); }
+  function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+  function closeModalOutside(e, id) { if (e.target === document.getElementById(id)) closeModal(id); }
+  function switchToRegister() {
+    document.getElementById('modalTitle').textContent = 'Crear Cuenta';
+    document.getElementById('modalSubtitle').textContent = 'Regístrese para acceder a la biblioteca digital y gestionar sus solicitudes académicas.';
+    document.getElementById('loginForm').innerHTML = `
+      <div class="form-row">
+        <div class="form-group"><label>Nombre(s)</label><input class="form-control" type="text" placeholder="Su nombre"></div>
+        <div class="form-group"><label>Apellidos</label><input class="form-control" type="text" placeholder="Sus apellidos"></div>
+      </div>
+      <div class="form-group"><label>Correo Electrónico</label><input class="form-control" type="email" placeholder="correo@ejemplo.com"></div>
+      <div class="form-group"><label>Contraseña</label><input class="form-control" type="password" placeholder="Mínimo 8 caracteres"></div>
+      <div class="form-group"><label>WhatsApp</label><input class="form-control" type="tel" placeholder="+591 7 000 0000"></div>
+      <button class="btn-submit" onclick="closeModal('loginModal');showToast('¡Registro exitoso! Bienvenido a Asesores Alma.')"><i class="fas fa-user-plus"></i> Crear mi Cuenta</button>
+      <div class="login-toggle">¿Ya tiene cuenta? <a onclick="location.reload()">Inicie sesión</a></div>
+    `;
+  }
+
+  // ─── TOAST ───
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    document.getElementById('toastMsg').textContent = msg;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3500);
+  }
+
+  // ─── FORM SUBMIT ───
+  function submitForm() {
+    showToast('¡Solicitud enviada! Le contactaremos en menos de 24 horas.');
+  }
+
+  // ─── ANIMATIONS ON SCROLL ───
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.service-card, .mission-card, .course-card, .testimonial-card, .doc-card, .value-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
